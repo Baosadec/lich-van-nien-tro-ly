@@ -14,7 +14,6 @@ const state = {
 };
 
 // Initialize Gemini
-// Note: process.env.API_KEY is injected by the build system or the window.process shim in index.html
 const apiKey = window.process?.env?.API_KEY || process.env.API_KEY;
 let aiClient = null;
 if (apiKey) {
@@ -318,11 +317,125 @@ const renderLoveFortune = () => {
 };
 
 const renderBlog = () => {
-    return `<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center animate-fade-in"><h2 class="text-2xl font-bold text-gray-800">Blog Phong Thủy</h2><p>Đang cập nhật bài viết mới...</p></div>`;
+    const posts = [
+        {
+          title: "Dự báo tử vi năm Ất Tỵ 2025: Cơ hội và Thách thức",
+          excerpt: "Năm Ất Tỵ 2025 mang hành Hỏa, dự báo sẽ là một năm đầy biến động nhưng cũng nhiều cơ hội bứt phá cho các tuổi...",
+          image: "https://images.unsplash.com/photo-1549833555-46f901a1c97a?q=80&w=800&auto=format&fit=crop",
+          date: "12/05/2024"
+        },
+        {
+          title: "Cách bày mâm ngũ quả ngày Tết chuẩn phong thủy 3 miền",
+          excerpt: "Mâm ngũ quả ngày Tết không chỉ để cúng tổ tiên mà còn gửi gắm ước mong về một năm mới sung túc, đủ đầy. Xem ngay cách bày...",
+          image: "https://images.unsplash.com/photo-1517404215738-15263e9f9178?q=80&w=800&auto=format&fit=crop",
+          date: "10/02/2024"
+        },
+        {
+          title: "Văn khấn mùng 1 và ngày rằm hàng tháng chuẩn nhất",
+          excerpt: "Tổng hợp các bài văn khấn nôm truyền thống dùng cho ngày mùng 1 và ngày rằm, giúp gia chủ cầu bình an, tài lộc...",
+          image: "https://images.unsplash.com/photo-1628148813735-9cb68b81292d?q=80&w=800&auto=format&fit=crop",
+          date: "01/04/2024"
+        },
+        {
+          title: "Sao Thái Bạch năm 2025 chiếu mệnh nào? Cách hóa giải",
+          excerpt: "Sao Thái Bạch là sao xấu nhất trong hệ thống cửu diệu, thường gây hao tài tốn của. Cùng xem danh sách các tuổi gặp sao này...",
+          image: "https://images.unsplash.com/photo-1506318137071-a8bcbf67cc77?q=80&w=800&auto=format&fit=crop",
+          date: "28/03/2024"
+        }
+    ];
+
+    const postsHTML = posts.map(post => `
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
+            <div class="h-48 overflow-hidden">
+               <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+            </div>
+            <div class="p-5">
+              <div class="text-xs text-green-600 font-semibold mb-2">${post.date}</div>
+              <h3 class="font-bold text-lg text-gray-800 mb-2 hover:text-green-600 cursor-pointer line-clamp-2">${post.title}</h3>
+              <p class="text-sm text-gray-600 line-clamp-3 mb-4">${post.excerpt}</p>
+              <button class="text-green-600 text-sm font-semibold hover:underline">Đọc thêm →</button>
+            </div>
+        </div>
+    `).join('');
+
+    return `
+        <div class="space-y-6 animate-fade-in">
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Blog Phong Thủy</h2>
+            <p class="text-gray-600">Cập nhật những thông tin hữu ích về phong thủy, tâm linh và đời sống.</p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            ${postsHTML}
+          </div>
+        </div>
+    `;
 };
 
 const renderKnowledge = () => {
-    return `<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center animate-fade-in"><h2 class="text-2xl font-bold text-gray-800">Kho Kiến Thức</h2><p>Đang cập nhật...</p></div>`;
+    const categories = [
+        {
+          title: "Phong Thủy Nhà Ở",
+          icon: "🏠",
+          articles: ["Cách xem hướng nhà hợp tuổi", "Bố trí phòng bếp hút tài lộc", "Cây phong thủy nên trồng trước nhà", "Kích thước cửa chính theo lỗ ban"]
+        },
+        {
+          title: "Văn Khấn Cổ Truyền",
+          icon: "🙏",
+          articles: ["Văn khấn mùng 1 hàng tháng", "Văn khấn ngày rằm", "Văn khấn tạ mộ cuối năm", "Văn khấn cúng Ông Công Ông Táo"]
+        },
+        {
+          title: "Sao Hạn & Tử Vi",
+          icon: "⭐",
+          articles: ["Bảng sao hạn năm 2025", "Cách cúng dâng sao giải hạn", "Tuổi Tam Tai năm Ất Tỵ", "Màu sắc hợp mệnh năm 2025"]
+        },
+        {
+          title: "Phong Tục Tập Quán",
+          icon: "🏮",
+          articles: ["Ý nghĩa ngày Tết Hàn Thực", "Tục lệ xông đất đầu năm", "Lễ cúng đầy tháng cho bé", "Những điều kiêng kỵ ngày Tết"]
+        }
+    ];
+
+    const catsHTML = categories.map(cat => `
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                 <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center text-2xl">
+                   ${cat.icon}
+                 </div>
+                 <h3 class="text-xl font-bold text-gray-800">${cat.title}</h3>
+              </div>
+              <ul class="space-y-3">
+                ${cat.articles.map(article => `
+                  <li class="flex items-center text-gray-600 hover:text-green-600 cursor-pointer group">
+                    <svg class="w-4 h-4 mr-2 text-green-400 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="text-sm font-medium">${article}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+            <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 text-right">
+               <button class="text-sm text-green-700 font-semibold hover:underline">Xem tất cả &rarr;</button>
+            </div>
+        </div>
+    `).join('');
+
+    return `
+        <div class="space-y-8 animate-fade-in">
+          <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-8 text-white shadow-lg">
+            <h1 class="text-3xl font-bold mb-2">Kho Tàng Kiến Thức</h1>
+            <p class="opacity-90 text-lg">Phong thủy, Tâm linh & Văn hóa Việt Nam</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            ${catsHTML}
+          </div>
+          
+          <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center">
+             <h4 class="text-yellow-800 font-bold mb-2 uppercase text-sm tracking-wide">Lời khuyên hôm nay</h4>
+             <p class="text-gray-700 italic text-lg">"Tâm an vạn sự an, tâm động vạn sự phiền. Hãy giữ tâm thái bình thản trước mọi biến cố của cuộc đời."</p>
+          </div>
+        </div>
+    `;
 };
 
 /**
