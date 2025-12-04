@@ -14,21 +14,21 @@ const blogData = [
     date: "15/12/2024",
     author: "Thầy Phong Thủy",
     content: `
-      <p class="mb-4">Theo quan niệm phong thủy, cây xanh không chỉ để trang trí mà còn là vật phẩm giúp cân bằng âm dương, mang lại sinh khí. Dưới đây là 5 loại cây "thần tài" dân văn phòng nên có:</p>
+      <p>Theo quan niệm phong thủy, cây xanh không chỉ để trang trí mà còn là vật phẩm giúp cân bằng âm dương, mang lại sinh khí. Dưới đây là 5 loại cây "thần tài" dân văn phòng nên có:</p>
       
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">1. Cây Kim Tiền</h3>
-      <p class="mb-4">Đúng như tên gọi, cây Kim Tiền (hay Kim Phát Tài) tượng trưng cho sự giàu sang, phú quý. Lá cây xanh mướt, dày và bóng, vươn thẳng lên cao thể hiện sự thăng tiến không ngừng. Loại cây này rất dễ sống, không cần tưới nhiều nước, thích hợp trong môi trường máy lạnh.</p>
+      <h3>1. Cây Kim Tiền</h3>
+      <p>Đúng như tên gọi, cây Kim Tiền (hay Kim Phát Tài) tượng trưng cho sự giàu sang, phú quý. Lá cây xanh mướt, dày và bóng, vươn thẳng lên cao thể hiện sự thăng tiến không ngừng. Loại cây này rất dễ sống, không cần tưới nhiều nước, thích hợp trong môi trường máy lạnh.</p>
       
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">2. Cây Lưỡi Hổ</h3>
-      <p class="mb-4">Cây Lưỡi Hổ có khả năng xua đuổi tà khí và những điều xui xẻo. Lá cây mọc thẳng đứng thể hiện sự quyết đoán, ý chí vươn lên của gia chủ. Ngoài ra, Lưỡi Hổ còn là "máy lọc không khí" tự nhiên cực tốt, hấp thụ bức xạ từ máy tính.</p>
+      <h3>2. Cây Lưỡi Hổ</h3>
+      <p>Cây Lưỡi Hổ có khả năng xua đuổi tà khí và những điều xui xẻo. Lá cây mọc thẳng đứng thể hiện sự quyết đoán, ý chí vươn lên của gia chủ. Ngoài ra, Lưỡi Hổ còn là "máy lọc không khí" tự nhiên cực tốt, hấp thụ bức xạ từ máy tính.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">3. Cây Phú Quý</h3>
-      <p class="mb-4">Với viền lá màu đỏ hồng đặc trưng, cây Phú Quý mang lại vẻ đẹp rực rỡ và sự may mắn. Màu đỏ trong phong thủy thuộc hành Hỏa, rất hợp với người mệnh Hỏa và mệnh Thổ, giúp kích hoạt cung danh vọng.</p>
+      <h3>3. Cây Phú Quý</h3>
+      <p>Với viền lá màu đỏ hồng đặc trưng, cây Phú Quý mang lại vẻ đẹp rực rỡ và sự may mắn. Màu đỏ trong phong thủy thuộc hành Hỏa, rất hợp với người mệnh Hỏa và mệnh Thổ, giúp kích hoạt cung danh vọng.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">4. Cây Ngọc Ngân</h3>
-      <p class="mb-4">Cây Ngọc Ngân (Valentine) có lá đốm trắng xanh đẹp mắt. Trong phong thủy, nó được mệnh danh là cây tài lộc, mang đến sự thịnh vượng và may mắn trong tình duyên.</p>
+      <h3>4. Cây Ngọc Ngân</h3>
+      <p>Cây Ngọc Ngân (Valentine) có lá đốm trắng xanh đẹp mắt. Trong phong thủy, nó được mệnh danh là cây tài lộc, mang đến sự thịnh vượng và may mắn trong tình duyên.</p>
 
-      <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 my-6 italic">
+      <div class="blog-quote">
         <strong>Lưu ý:</strong> Khi chọn cây, bạn nên tránh những cây có hình dáng gai góc hoặc lá quá nhọn chĩa vào người ngồi, vì sẽ tạo ra sát khí không tốt cho công việc.
       </div>
     `
@@ -41,10 +41,10 @@ const blogData = [
     date: "01/12/2024",
     author: "Ban Biên Tập",
     content: `
-      <p class="mb-4">Cúng ngày Sóc (mùng 1) và ngày Vọng (Rằm) là nghi thức tâm linh quan trọng của người Việt để tưởng nhớ gia tiên và cầu mong một tháng mới hanh thông.</p>
+      <p>Cúng ngày Sóc (mùng 1) và ngày Vọng (Rằm) là nghi thức tâm linh quan trọng của người Việt để tưởng nhớ gia tiên và cầu mong một tháng mới hanh thông.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Sắm lễ</h3>
-      <ul class="list-disc pl-5 space-y-2 mb-4">
+      <h3>Sắm lễ</h3>
+      <ul>
         <li>Hương, hoa tươi (cúc, hồng, huệ...).</li>
         <li>Trầu cau, rượu, nước sạch.</li>
         <li>Đèn dầu hoặc nến.</li>
@@ -52,8 +52,8 @@ const blogData = [
         <li>Vàng mã (tùy tâm).</li>
       </ul>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Bài văn khấn Thần Linh, Thổ Địa</h3>
-      <div class="bg-gray-100 p-6 rounded-lg font-serif text-gray-700 italic border border-gray-300">
+      <h3>Bài văn khấn Thần Linh, Thổ Địa</h3>
+      <div class="bg-gray-50 p-6 rounded-lg font-serif text-gray-700 italic border border-gray-300 my-4">
         "Nam mô A Di Đà Phật! (3 lần)<br/>
         - Con lạy chín phương Trời, mười phương Chư Phật, Chư Phật mười phương.<br/>
         - Con kính lạy Hoàng thiên, Hậu thổ chư vị Tôn thần.<br/>
@@ -68,7 +68,7 @@ const blogData = [
         Cúi xin các Ngài thương xót tín chủ, giáng lâm trước án, chứng giám lòng thành, thụ hưởng lễ vật, phù trì tín chủ chúng con toàn gia an lạc, công việc hanh thông..."
       </div>
       
-      <p class="mt-4 text-sm text-gray-500">*Lưu ý: Đây là bài khấn tham khảo chung, tùy theo phong tục từng vùng miền có thể có sự thay đổi nhỏ.</p>
+      <p class="text-sm text-gray-500 italic">*Lưu ý: Đây là bài khấn tham khảo chung, tùy theo phong tục từng vùng miền có thể có sự thay đổi nhỏ.</p>
     `
   },
   {
@@ -79,19 +79,19 @@ const blogData = [
     date: "10/11/2024",
     author: "Chuyên Gia Tử Vi",
     content: `
-      <p class="mb-4">Năm Ất Tỵ 2025 mang hành Hỏa (Phú Đăng Hỏa). Với người tuổi Tỵ, đây là năm bản mệnh (năm tuổi), thường được cho là có nhiều biến động.</p>
+      <p>Năm Ất Tỵ 2025 mang hành Hỏa (Phú Đăng Hỏa). Với người tuổi Tỵ, đây là năm bản mệnh (năm tuổi), thường được cho là có nhiều biến động.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Tổng quan</h3>
-      <p class="mb-4">Người tuổi Tỵ năm nay chịu ảnh hưởng của Thái Tuế, nên tâm lý dễ bất ổn, hay lo âu. Tuy nhiên, nhờ có cát tinh "Thiên Giải" chiếu mệnh, mọi khó khăn rồi sẽ qua nếu bạn giữ vững tinh thần.</p>
+      <h3>Tổng quan</h3>
+      <p>Người tuổi Tỵ năm nay chịu ảnh hưởng của Thái Tuế, nên tâm lý dễ bất ổn, hay lo âu. Tuy nhiên, nhờ có cát tinh "Thiên Giải" chiếu mệnh, mọi khó khăn rồi sẽ qua nếu bạn giữ vững tinh thần.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Sự nghiệp</h3>
-      <p class="mb-4">Công việc có sự thay đổi, có thể là chuyển việc, chuyển vị trí hoặc đi công tác xa. Lời khuyên là hãy "án binh bất động" trước những quyết định rủi ro cao. Nên tập trung trau dồi kỹ năng hơn là mở rộng đầu tư mạo hiểm.</p>
+      <h3>Sự nghiệp</h3>
+      <p>Công việc có sự thay đổi, có thể là chuyển việc, chuyển vị trí hoặc đi công tác xa. Lời khuyên là hãy "án binh bất động" trước những quyết định rủi ro cao. Nên tập trung trau dồi kỹ năng hơn là mở rộng đầu tư mạo hiểm.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Tài lộc</h3>
-      <p class="mb-4">Tài chính ở mức trung bình. Cần quản lý chi tiêu chặt chẽ, đề phòng mất mát tiền bạc do tin người. Không nên cho vay mượn số tiền lớn.</p>
+      <h3>Tài lộc</h3>
+      <p>Tài chính ở mức trung bình. Cần quản lý chi tiêu chặt chẽ, đề phòng mất mát tiền bạc do tin người. Không nên cho vay mượn số tiền lớn.</p>
 
-      <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Tình duyên</h3>
-      <p class="mb-4">Với người độc thân, năm nay có cơ hội gặp gỡ nhưng khó đi đến cam kết lâu dài. Người đã có gia đình cần chú ý nhường nhịn để tránh xung đột không đáng có.</p>
+      <h3>Tình duyên</h3>
+      <p>Với người độc thân, năm nay có cơ hội gặp gỡ nhưng khó đi đến cam kết lâu dài. Người đã có gia đình cần chú ý nhường nhịn để tránh xung đột không đáng có.</p>
     `
   },
   {
@@ -102,7 +102,7 @@ const blogData = [
     date: "28/10/2024",
     author: "KTS. Thanh Tùng",
     content: `
-      <p class="mb-4">Chọn màu sơn nhà theo quy luật Ngũ Hành Tương Sinh - Tương Khắc là nguyên tắc vàng để mang lại may mắn.</p>
+      <p>Chọn màu sơn nhà theo quy luật Ngũ Hành Tương Sinh - Tương Khắc là nguyên tắc vàng để mang lại may mắn.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div class="bg-blue-50 p-4 rounded border border-blue-200">
@@ -401,4 +401,282 @@ const renderAssistant = () => {
     <div class="max-w-4xl mx-auto h-[600px] flex flex-col bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden animate-fade-in">
        <div class="bg-gradient-to-r from-green-600 to-teal-600 p-4 text-white flex items-center gap-3">
           <div class="p-2 bg-white/20 rounded-full">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Trợ Lý AI Thông Thái</h3>
+            <p class="text-xs text-green-100 opacity-90">Hỏi đáp mọi lúc, mọi nơi</p>
+          </div>
+       </div>
+
+       <div id="chat-box" class="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
+          ${msgs}
+       </div>
+
+       <div class="p-4 bg-white border-t border-gray-100">
+         <div class="flex items-center gap-2">
+           <input
+             type="text"
+             id="chat-input"
+             placeholder="Nhập câu hỏi của bạn..."
+             class="flex-1 border border-gray-300 rounded-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
+             onkeydown="if(event.key === 'Enter') app.sendMessage()"
+           />
+           <button onclick="app.sendMessage()" class="bg-green-600 text-white p-3 rounded-full hover:bg-green-700 transition shadow-md">
+             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+           </button>
+         </div>
+       </div>
+    </div>
+  `;
+};
+
+/**
+ * --- BLOG LOGIC & RENDERING ---
+ * Tách biệt phần hiển thị Blog: List View và Detail View
+ */
+const renderBlog = () => {
+  // Nếu đang xem chi tiết một bài viết
+  if (state.viewingPostId) {
+    const post = blogData.find(p => p.id === state.viewingPostId);
+    if (!post) return '<div class="text-center p-8">Bài viết không tồn tại</div>';
+
+    return `
+      <div class="animate-fade-in max-w-4xl mx-auto bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+        <!-- Back Button -->
+        <div class="p-4 border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur z-10">
+          <button onclick="app.backToBlog()" class="text-gray-500 hover:text-green-600 flex items-center gap-2 font-medium transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Quay lại danh sách
+          </button>
+        </div>
+
+        <!-- Article Content -->
+        <div class="p-6 md:p-10">
+          <div class="text-sm text-green-600 font-bold mb-3 uppercase tracking-wider">${post.date} &bull; ${post.author}</div>
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">${post.title}</h1>
+          
+          <img src="${post.image}" class="w-full h-64 md:h-96 object-cover rounded-xl shadow-md mb-8" alt="${post.title}">
+          
+          <div class="blog-detail-content">
+             ${post.content}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Giao diện Danh sách bài viết (Grid View)
+  return `
+    <div class="space-y-8 animate-fade-in">
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Blog Phong Thủy</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Cập nhật những kiến thức phong thủy, tâm linh và văn hóa truyền thống hữu ích cho cuộc sống hàng ngày của bạn.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        ${blogData.map(post => `
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 group flex flex-col h-full">
+            <div class="h-56 blog-card-image-container relative">
+               <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover blog-card-image" />
+               <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent w-full p-4">
+                 <span class="text-white text-xs font-bold bg-green-600 px-2 py-1 rounded">${post.date}</span>
+               </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 onclick="app.viewPost(${post.id})" class="font-bold text-xl text-gray-900 mb-3 hover:text-green-600 cursor-pointer line-clamp-2 transition-colors">${post.title}</h3>
+              <p class="text-gray-600 line-clamp-3 mb-4 flex-1 leading-relaxed">${post.excerpt}</p>
+              <button onclick="app.viewPost(${post.id})" class="text-green-700 font-bold text-sm uppercase tracking-wide hover:underline self-start flex items-center">
+                Đọc chi tiết 
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+};
+
+const renderKnowledge = () => {
+    return `
+    <div class="space-y-8 animate-fade-in">
+      <div class="bg-gradient-to-r from-green-700 to-green-900 rounded-xl p-10 text-white shadow-xl text-center">
+        <h1 class="text-4xl font-bold mb-4">Kho Tàng Kiến Thức</h1>
+        <p class="opacity-90 text-xl font-light">Phong thủy, Tâm linh & Văn hóa Việt Nam</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                 <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center text-2xl">🏠</div>
+                 <h3 class="text-xl font-bold text-gray-800">Phong Thủy Nhà Ở</h3>
+              </div>
+              <ul class="space-y-3">
+                <li class="flex items-center text-gray-600 hover:text-green-600 cursor-pointer group"><svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Cách xem hướng nhà hợp tuổi</li>
+                <li class="flex items-center text-gray-600 hover:text-green-600 cursor-pointer group"><svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Bố trí phòng bếp hút tài lộc</li>
+              </ul>
+            </div>
+        </div>
+        
+         <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-4">
+                 <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center text-2xl">🙏</div>
+                 <h3 class="text-xl font-bold text-gray-800">Văn Khấn Cổ Truyền</h3>
+              </div>
+              <ul class="space-y-3">
+                <li class="flex items-center text-gray-600 hover:text-green-600 cursor-pointer group"><svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Văn khấn mùng 1 hàng tháng</li>
+                <li class="flex items-center text-gray-600 hover:text-green-600 cursor-pointer group"><svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Văn khấn ngày rằm</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      
+      <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center shadow-sm">
+         <h4 class="text-yellow-800 font-bold mb-2 uppercase text-sm tracking-wide">Lời khuyên hôm nay</h4>
+         <p class="text-gray-700 italic text-lg">"Tâm an vạn sự an, tâm động vạn sự phiền. Hãy giữ tâm thái bình thản trước mọi biến cố của cuộc đời."</p>
+      </div>
+    </div>
+    `;
+};
+
+const renderLove = () => {
+    return `<div class="text-center p-10 bg-white rounded-xl shadow">Tính năng Bói Duyên đang được cập nhật...</div>`;
+}
+
+/**
+ * --- CORE APP LOGIC ---
+ */
+
+const app = {
+  init: () => {
+    renderNavigation();
+    app.render();
+  },
+
+  render: () => {
+    const main = document.getElementById('app');
+    if (state.currentView === 'HOME' || state.currentView === 'CALENDAR') {
+      main.innerHTML = `
+        ${renderDailyDetail(state.date)}
+        <div id="calendar-view">${renderCalendarView(state.date)}</div>
+      `;
+    } else if (state.currentView === 'ASSISTANT') {
+      main.innerHTML = renderAssistant();
+    } else if (state.currentView === 'BLOG') {
+      main.innerHTML = renderBlog();
+    } else if (state.currentView === 'KNOWLEDGE') {
+        main.innerHTML = renderKnowledge();
+    } else if (state.currentView === 'LOVE') {
+        main.innerHTML = renderLove();
+    }
+  },
+
+  navigate: (view) => {
+    state.currentView = view;
+    // Reset viewing post when navigating away or to main blog
+    if (view !== 'BLOG') state.viewingPostId = null;
+    state.isMenuOpen = false;
+    state.isSubMenuOpen = false;
+    renderNavigation();
+    app.render();
+  },
+
+  // Blog Navigation Logic
+  viewPost: (id) => {
+    state.viewingPostId = id;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    app.render();
+  },
+  
+  backToBlog: () => {
+    state.viewingPostId = null;
+    app.render();
+  },
+
+  toggleSubMenu: () => {
+    state.isSubMenuOpen = !state.isSubMenuOpen;
+    renderNavigation();
+  },
+  
+  changeDate: (delta) => {
+    const newDate = new Date(state.date);
+    newDate.setDate(state.date.getDate() + delta);
+    state.date = newDate;
+    app.render();
+  },
+
+  changeMonth: (delta) => {
+    const newDate = new Date(state.date);
+    newDate.setMonth(state.date.getMonth() + delta);
+    newDate.setDate(1); 
+    state.date = newDate;
+    app.render();
+  },
+
+  selectDate: (isoDate) => {
+    state.date = new Date(isoDate);
+    app.render();
+    // Scroll to daily detail if on calendar view
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
+  
+  scrollToCalendar: () => {
+      document.getElementById('calendar-view').scrollIntoView({ behavior: 'smooth' });
+  },
+
+  sendMessage: async () => {
+    const input = document.getElementById('chat-input');
+    const text = input.value.trim();
+    if (!text) return;
+
+    state.chatHistory.push({ role: 'user', text: text });
+    input.value = '';
+    app.render();
+
+    // Scroll to bottom
+    const box = document.getElementById('chat-box');
+    box.scrollTop = box.scrollHeight;
+
+    // Loading state simulation
+    state.chatHistory.push({ role: 'model', text: '...' });
+    app.render();
+
+    try {
+      let responseText = "Xin lỗi, tôi không thể trả lời ngay lúc này.";
+      if (aiClient) {
+        const response = await aiClient.models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: text,
+            config: {
+                systemInstruction: "Bạn là một trợ lý ảo thông thái về văn hóa, lịch sử, phong thủy và đời sống Việt Nam. Hãy trả lời ngắn gọn, thân thiện và hữu ích.",
+            }
+        });
+        responseText = response.text;
+      } else {
+          responseText = "Chưa cấu hình API Key. Vui lòng kiểm tra cài đặt.";
+      }
+      
+      // Remove loading and add response
+      state.chatHistory.pop();
+      state.chatHistory.push({ role: 'model', text: responseText });
+    } catch (e) {
+      state.chatHistory.pop();
+      state.chatHistory.push({ role: 'model', text: "Đã có lỗi xảy ra: " + e.message });
+    }
+    app.render();
+     // Scroll to bottom again
+     setTimeout(() => {
+         const b = document.getElementById('chat-box');
+         if(b) b.scrollTop = b.scrollHeight;
+     }, 100);
+  }
+};
+
+// Expose app to window for HTML events
+window.app = app;
+
+// Start
+app.init();
