@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch Vạn Niên & Trợ Lý AI</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: {
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+                800: '#166534',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Import Map cho Google GenAI SDK -->
+    <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+
+    <!-- Polyfill cho process.env để chạy trên trình duyệt mà không cần build tool -->
+    <script>
+      window.process = {
+        env: {
+          // LƯU Ý: Nếu chạy local không qua build tool của GitHub, bạn cần điền API Key vào đây để test.
+          // Khi deploy lên GitHub Pages qua Actions, dòng này sẽ được thay thế hoặc biến môi trường sẽ được inject.
+          API_KEY: '' 
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100 font-sans text-gray-900 min-h-screen flex flex-col">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between h-16">
+          <!-- Logo -->
+          <div class="flex items-center cursor-pointer" onclick="app.navigate('HOME')">
+             <div class="h-10 w-10 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md mr-2">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+             </div>
+             <span class="font-bold text-xl text-gray-800 tracking-tight hidden sm:block">Lịch Vạn Niên</span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-1 items-center" id="desktop-menu">
+            <!-- Items will be injected by JS -->
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="flex items-center md:hidden">
+            <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+              <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner">
+         <!-- Items injected by JS -->
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+      <!-- Content will be rendered here -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8 mt-auto">
+       <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+         <p class="mb-2">© 2025 Lịch Vạn Niên & Trợ Lý AI.</p>
+         <p class="text-xs text-gray-400">Thiết kế giao diện hiện đại, trải nghiệm mượt mà.</p>
+       </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
